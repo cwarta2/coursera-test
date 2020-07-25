@@ -3,3 +3,57 @@ body {
 	font-size: 40px;
 	background-color: black;
 }
+
+nav a {
+	color: white;
+	background-color: black;
+}
+
+/*#myfacebookimage {
+	border-radius: 100%;
+}*/
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+/*  height: 100%;
+  width: 100%;*/
+  opacity: 0;
+  transition: .5s ease;
+  /*background-color: #008CBA;*/
+  border-radius: 100%;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.facebookimage {
+  display: block;
+  width: 78%;
+  height: auto;
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  -webkit-transform: translate(-45%, -45%);
+  -ms-transform: translate(-45%, -45%);
+  transform: translate(-45%, -45%);
+}
